@@ -1,6 +1,7 @@
 package com.example.myapplication.ui.horoscopo
 
 import androidx.lifecycle.ViewModel
+import com.example.myapplication.data.HoroscopoProvider
 import com.example.myapplication.domain.HoroscopoInfo
 import com.example.myapplication.domain.HoroscopoInfo.*
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,7 +11,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class HoroscopoViewModel @Inject constructor(): ViewModel() {
+class HoroscopoViewModel @Inject constructor(private val horoscopoProvider: HoroscopoProvider): ViewModel() {
 
     // lista para modificar - mutable
     private var _horoscopo = MutableStateFlow<List<HoroscopoInfo>>(emptyList())
@@ -18,8 +19,6 @@ class HoroscopoViewModel @Inject constructor(): ViewModel() {
     val horoscopo: StateFlow<List<HoroscopoInfo>> = _horoscopo
 
     init{
-        _horoscopo.value = listOf(
-            Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces
-        )
+        _horoscopo.value = horoscopoProvider.getHoroscopos()
     }
 }

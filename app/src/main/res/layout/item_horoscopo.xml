@@ -2,6 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/rvHoroscopo"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -17,6 +19,9 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:fontFamily="@font/tangerine_regular"
+        android:textColor="@color/secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivHoroscopo"/>
