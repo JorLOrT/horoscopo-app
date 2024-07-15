@@ -31,6 +31,6 @@
         tools:layout="@layout/activity_horoscopo_detalle" >
         <argument
             android:name="tipo"
-            app:argType="com.example.myapplication.domain.HoroscopoModel" />
+            app:argType="com.example.myapplication.domain.model.HoroscopoModel" />
     </activity>
 </navigation>

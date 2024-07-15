@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
-import com.example.myapplication.domain.HoroscopoInfo
+import com.example.myapplication.domain.model.HoroscopoInfo
 
 class HoroscopoAdapter(private var horoscopoList: List<HoroscopoInfo> = emptyList(), private val onItemSelected:(HoroscopoInfo) -> Unit) : RecyclerView.Adapter<HoroscopoViewHolder>() {
 

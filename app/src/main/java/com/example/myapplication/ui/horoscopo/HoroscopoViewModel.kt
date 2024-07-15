@@ -1,9 +1,8 @@
 package com.example.myapplication.ui.horoscopo
 
 import androidx.lifecycle.ViewModel
-import com.example.myapplication.data.HoroscopoProvider
-import com.example.myapplication.domain.HoroscopoInfo
-import com.example.myapplication.domain.HoroscopoInfo.*
+import com.example.myapplication.data.providers.HoroscopoProvider
+import com.example.myapplication.domain.model.HoroscopoInfo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

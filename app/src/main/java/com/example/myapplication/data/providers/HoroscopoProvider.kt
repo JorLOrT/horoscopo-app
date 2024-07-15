@@ -1,7 +1,7 @@
-package com.example.myapplication.data
+package com.example.myapplication.data.providers
 
-import com.example.myapplication.domain.HoroscopoInfo
-import com.example.myapplication.domain.HoroscopoInfo.*
+import com.example.myapplication.domain.model.HoroscopoInfo
+import com.example.myapplication.domain.model.HoroscopoInfo.*
 import javax.inject.Inject
 
 
